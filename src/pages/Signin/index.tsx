@@ -6,13 +6,36 @@ import {
 } from "react-native"
 
 import Watering from '../../assets/watering.png';
-import { Container } from "./styles";
+
+import { 
+  Container,
+  Content,
+  Title,
+  SubTitle,
+  Imagem
+ } from "./styles";
 
 export function Signin(){
   return (
     <>
       <Container>
-        <Image source={Watering}/>
+        <Imagem 
+          source={Watering}
+          resizeMode="stretch"
+        />
+        <Content>
+          <Title>
+            Gerecie {`\n`}
+            suas plantas de {`\n`}
+            forma fácil
+          </Title>
+
+          <SubTitle>
+            Não esqueça mais de regar suas {`\n`} 
+            plantas.Nós lembramos você {`\n`}
+            sempre que precisar
+          </SubTitle>
+        </Content>
       </Container>
     </>    
   )

@@ -1,20 +1,15 @@
-//É uma interface de exemplo que o projeto trás como padrão.
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {ThemeProvider} from 'styled-components';
 import { Signin } from './src/pages/Signin';
+import {theme} from './src/global/styles/theme'
+
+import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   return (
-    <Signin />
+    <ThemeProvider theme={theme}>
+      <Signin />
+    </ThemeProvider>
+    
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
