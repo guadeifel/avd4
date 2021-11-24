@@ -1,10 +1,19 @@
 import React from "react";
-import {View, Text} from "react-native"
+import {
+  View, 
+  Image,
+  Text 
+} from "react-native"
+
+import Watering from '../../assets/watering.png';
+import { Container } from "./styles";
 
 export function Signin(){
   return (
-    <View>
-      <Text>Signin</Text>
-    </View>
+    <>
+      <Container>
+        <Image source={Watering}/>
+      </Container>
+    </>    
   )
 }
