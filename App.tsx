@@ -1,3 +1,4 @@
+//É uma interface de exemplo que o projeto trás como padrão.
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
