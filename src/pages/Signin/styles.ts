@@ -9,16 +9,14 @@ export const Container = styled.View`
 export const Content = styled.View`
   margin-top: -40px;
 `
-
 export const Title = styled.Text`
-  font-size: 28px;
+  font-size: 28;
   text-align: center;
   color: ${({ theme }) => theme.colors.heading};
-  margin-top: 38px;
+  margin-top: 38;
   font-family: ${({theme})=> theme.fonts.heading};
   line-height: 34px;
 `
-
 export const SubTitle = styled.Text`
   text-align: center;
   font-size: 18px;
@@ -27,8 +25,6 @@ export const SubTitle = styled.Text`
   color: ${({theme})=> theme.colors.heading};
   font-family: ${({theme})=> theme.fonts.text};
 `
-
 export const Imagem = styled.Image`
-  width: 100%;
-  height: 100%;
+  height: Dimensions.get('window').20%
 `

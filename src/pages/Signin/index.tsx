@@ -19,17 +19,20 @@ export function Signin(){
   return (
     <>
       <Container>
-        <Imagem 
-          source={Watering}
-          resizeMode="stretch"
-        />
         <Content>
           <Title>
             Gerecie {`\n`}
             suas plantas de {`\n`}
             forma fácil
           </Title>
+        </Content>
 
+        <Imagem 
+          source={Watering}
+          resizeMode="stretch"
+        />  
+
+        <Content>
           <SubTitle>
             Não esqueça mais de regar suas {`\n`} 
             plantas.Nós lembramos você {`\n`}
